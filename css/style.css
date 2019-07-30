@@ -1,0 +1,83 @@
+body{
+	padding: 0;
+	margin:  0;
+}
+.home{
+	background: #fff;
+	height: 80px;
+	position:  fixed;
+	z-index:  1;
+}
+.home ul{
+	margin-top: 15px;
+	padding-right: 50px;
+}
+.home .espaco{
+	padding-left: 30px;
+}
+.home ul li{
+	padding: 0 5px;
+	margin-left: 8px;
+	border: 3px solid #4395E1;
+	border-radius:  40px 40px 40px 40px;
+	height:  50px;
+}
+.home ul li:hover{
+	background-color: #558CC0;
+}
+.home ul li:hover ::{
+
+}
+.home ul li a{
+	color:  black;
+	margin-top: -8px;
+	font-size:  18px;
+}
+.home ul li a:hover{
+	color:  #ffffff;
+}
+.home .butao-cdt{
+	background: #F9694E;
+}
+.home .butao-cdt:hover{
+	background: #F8765D;
+}
+/* Carrosel de slide */
+.slide-carrosel{
+	width: 100%;
+}
+.carousel{
+	width: 80%;
+	margin: 0px auto;
+}
+/** rodapé */
+.page-footer{
+	background: #5E8AB4;
+}
+.page-footer ul li{
+	margin-bottom: 13px;
+	font-size:  18px;
+}
+.page-footer span{
+	margin-left:  10px;
+}
+.page-footer img{
+	width: 30px;
+}
+.page-footer h5{
+	text-decoration: underline;
+}
+.page-footer .white-text{
+	text-decoration: none;
+}
+/** div home */
+#principal{
+	background: url('../img/cool-background.png');
+	display: block;
+}
+#principal .caixa-img{
+	float: right;
+}
+#principal .caixa-text{
+	float: left;
+}
