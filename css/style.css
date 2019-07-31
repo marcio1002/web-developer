@@ -140,3 +140,19 @@ body{
 .cards .btn:active{
 	border: none;
 }
+/** formulário do cadastro */
+.row{
+	padding-top: 20px;
+	background: url('../img/web.jpg');
+	background-size: 50%;
+}
+.row .form{
+	position: relative;
+	left: 5%;
+}
+.required{
+	color: red;
+}
+.material-icons{
+	cursor:  pointer;
+}

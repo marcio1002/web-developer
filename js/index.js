@@ -19,16 +19,32 @@ document.addEventListener('DOMContentLoaded', function() {
 		menu.style.opacity = "10"
 	}
 });
-  //Script do carrosel 
-  var cont = 0
-  var img = []
-  var refrescar = 1
-  img[1] = document.querySelector('#um')
-  img[2] = document.querySelector('#dois')
-  img[3] = document.querySelector('#tres')
+  //código de inicialização select
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
 
-  var slide = document.querySelector('div.carousel')
-         
-      document.setInterval(function (){
-          slide.appendChild(img[cont++])
-      },1000)
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+  //script da senha
+  
+      var senha = $('#senha');
+      var olho = $(".botao");
+
+        olho.click(function() {
+          senha.attr("type", "text");
+          olho = "visibility_off"
+          olho.style.color = "red"
+        });
+
+        olho.click(function() {
+          senha.attr("type", "password");
+        });
+$(document).ready(function() {
+    $('input#senha').characterCounter();
+  });
+        
