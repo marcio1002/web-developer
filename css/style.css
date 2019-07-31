@@ -141,18 +141,21 @@ body{
 	border: none;
 }
 /** formulário do cadastro */
-.row{
+#for{
 	padding-top: 20px;
 	background: url('../img/web.jpg');
-	background-size: 50%;
-}
-.row .form{
-	position: relative;
-	left: 5%;
+	background-size: 90%;
+	background-position: -200% 40%;
+	padding-top: 30px;
+	margin-top: 10px;
 }
 .required{
 	color: red;
 }
 .material-icons{
 	cursor:  pointer;
+}
+.form .row{
+	position: relative;
+	left: 20%;
 }

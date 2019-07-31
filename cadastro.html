@@ -26,72 +26,75 @@
 			</div>
 		</nav>
 	</div>
-	<div class="row">
-		<form action="" method="" class="form col s8">
-			<div class="row">
-				<div class="input-field col s4">
-					<input type="text" id="name" name="nome" maxlength="12"/>
-					<label for="name" class="black-text">Nome completo:</label>
+	<div id="for">
+		<div class="row">
+			<form action="" method="" class="form col s5 right">
+				<div class="row">
+					<div class="input-field col s4">
+						<input type="text" id="name" name="nome" maxlength="12"/>
+						<label for="name" class="black-text">Nome completo:</label>
+					</div>
+					<div class="input-field col s4">
+						<input type="email" name="email" id="e-mail" class="validate" placeholder="usuario@enderoço.com" autocomplete required/>
+						<label for="e-mail" data-error="E-mail Inválido" class="black-text"><span class="required">*</span>E-mail:</label>
+					</div>
 				</div>
-				<div class="input-field col s4">
-					<input type="email" name="email" id="e-mail" class="validate" placeholder="usuario@enderoço.com" autocomplete required/>
-					<label for="e-mail" data-error="E-mail Inválido" class="black-text"><span class="required">*</span>E-mail:</label>
+				<div class="row">
+					<div class="input-field col s4">
+						<input type="text" name="cpf" id="cpf" class="validate" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="12" required/>
+						<label for="cpf" class="black-text"><span class="required">*</span>Digite o CPF:</label>
+					</div>
+					<div class=" input-field col s4">
+						<select name="estado" id="est">
+						      <option value="" disabled selected>Escola uma opção</option>
+						      <option value="1">São paulo</option>
+						      <option value="2">Option 2</option>
+						      <option value="3">Option 3</option>
+						      <option value="3">Option 3</option>
+						      <option value="3">Option 3</option>
+						      <option value="3">Option 3</option>
+						      <option value="3">Option 3</option>
+						      <option value="3">Option 3</option>
+						      <option value="3">Option 3</option>
+						      <option value="3">Option 3</option>
+						      <option value="3">Option 3</option>
+						      <option value="3">Option 3</option>
+						      <option value="3">Option 3</option>
+						      <option value="3">Option 3</option>
+					    </select>
+					    <label for="est" class="black-text"><span class="required">*</span>Estado:</label>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="input-field col s4">
-					<input type="text" name="cpf" id="cpf" class="validate" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="12" required/>
-					<label for="cpf" class="black-text"><span class="required">*</span>Digite o CPF:</label>
+				<div class="row">
+					<div class="input-field col s5">
+						<input type="text" name="endereco" id="ende" placeholder="Cidade Rua... n°" required/>
+						<label for="ende" class="black-text"><span class="required">*</span>Endereço:</label>
+					</div>		
 				</div>
-				<div class=" input-field col s4">
-					<select name="estado" id="est">
-					      <option value="" disabled selected>Escola uma opção</option>
-					      <option value="1">São paulo</option>
-					      <option value="2">Option 2</option>
-					      <option value="3">Option 3</option>
-					      <option value="3">Option 3</option>
-					      <option value="3">Option 3</option>
-					      <option value="3">Option 3</option>
-					      <option value="3">Option 3</option>
-					      <option value="3">Option 3</option>
-					      <option value="3">Option 3</option>
-					      <option value="3">Option 3</option>
-					      <option value="3">Option 3</option>
-					      <option value="3">Option 3</option>
-					      <option value="3">Option 3</option>
-					      <option value="3">Option 3</option>
-				    </select>
-				    <label for="est" class="black-text"><span class="required">*</span>Estado:</label>
+				<div class="row">
+					<div class="input-field col s5">
+						<input type="password" id="senha" name="senha" data-lenght="10" title="No maximo 10 caracteres" maxlength="10" title="Dica: A senha deve conter numeros, letras e cacteres" required/>
+						<i class="material-icons ">visibility</i>
+						<label for="senha" class="black-text"><span class="required">*</span>Senha:</label>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="input-field col s5">
-					<input type="text" name="endereco" id="ende" placeholder="Cidade Rua... n°" required/>
-					<label for="ende" class="black-text"><span class="required">*</span>Endereço:</label>
-				</div>		
-			</div>
-			<div class="row">
-				<div class="input-field col s5">
-					<input type="password" id="senha" name="senha" data-lenght="10" title="No maximo 10 caracteres" maxlength="10" title="Dica: A senha deve conter numeros, letras e cacteres" required/>
-					<i class="material-icons ">visibility</i>
-					<label for="senha" class="black-text"><span class="required">*</span>Senha:</label>
+				<div class="row">
+					<p>
+				      <label>
+				        <input type="checkbox" class="filled-in" checked="checked" />
+				        <span>Confirmo o registro</span>
+				      </label>
+				    </p>
+				    <p>
+				      <label>
+				        <input id="indeterminate-checkbox" type="checkbox" />
+				        <span>Aceito os termos de serviços</span>
+				      </label>
+				    </p>
+				    <button class="btn center">Ok</button>
 				</div>
-			</div>
-			<div class="row">
-				<p>
-			      <label>
-			        <input type="checkbox" class="filled-in" checked="checked" />
-			        <span>Confirmo o registro</span>
-			      </label>
-			    </p>
-			    <p>
-			      <label>
-			        <input id="indeterminate-checkbox" type="checkbox" />
-			        <span>Aceito os termos de serviços</span>
-			      </label>
-			    </p>
-			</div>
-		</form>
+			</form>
+		</div>
 	</div>
 	<footer class="page-footer">
           <div class="container">
