@@ -19,3 +19,16 @@ document.addEventListener('DOMContentLoaded', function() {
 		menu.style.opacity = "10"
 	}
 });
+  //Script do carrosel 
+  var cont = 0
+  var img = []
+  var refrescar = 1
+  img[1] = document.querySelector('#um')
+  img[2] = document.querySelector('#dois')
+  img[3] = document.querySelector('#tres')
+
+  var slide = document.querySelector('div.carousel')
+         
+      document.setInterval(function (){
+          slide.appendChild(img[cont++])
+      },1000)

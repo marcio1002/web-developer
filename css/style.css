@@ -5,8 +5,7 @@ body{
 .home{
 	background: #fff;
 	height: 80px;
-	position:  fixed;
-	z-index:  1;
+	display:  block;
 }
 .home ul{
 	margin-top: 15px;
@@ -14,6 +13,10 @@ body{
 }
 .home .espaco{
 	padding-left: 30px;
+	font-family: comic Sans MS;
+}
+.home img{
+	width: 30px;
 }
 .home ul li{
 	padding: 0 5px;
@@ -45,9 +48,10 @@ body{
 /* Carrosel de slide */
 .slide-carrosel{
 	width: 100%;
+	padding: 10px 0;
 }
 .carousel{
-	width: 80%;
+	max-width: 85%;
 	margin: 0px auto;
 }
 /** rodapé */
@@ -60,6 +64,7 @@ body{
 }
 .page-footer span{
 	margin-left:  10px;
+	font-family: comic Sans MS;
 }
 .page-footer img{
 	width: 30px;
@@ -67,17 +72,71 @@ body{
 .page-footer h5{
 	text-decoration: underline;
 }
-.page-footer .white-text{
+.page-footer .text-footer{
 	text-decoration: none;
 }
 /** div home */
 #principal{
 	background: url('../img/cool-background.png');
+	background-attachment: fixed;
 	display: block;
 }
 #principal .caixa-img{
 	float: right;
 }
 #principal .caixa-text{
-	float: left;
+  position: relative;
+	top:200px;
+	left: 50%;
+	font-size: 25px;
+	border: 2px dashed rgba(59,60,60,.7);
+}
+#principal .caixa-text span{
+	font-weight: bold;
+}
+/** Formatação dos cards no cursos.html */
+.cards{
+	width: 100%;
+	padding: 40px;
+	background: url('../img/background.svg');
+	background-size: 150%;
+
+}
+.cards a{
+	font-size: 18px;
+}
+.cards ul{
+}
+.cards ul li{
+	display: flex;
+	padding-bottom: 30px;
+}
+.cards .card{
+	width: 30%;
+	margin-left: 2%;
+}
+.cards .card img{
+	height: 240px;
+}
+.cards .card img:hover{
+	animation: zom 2s 1;
+}
+.cards .card-title{
+	font-size: 30px;
+	font-family: impact;
+}
+@keyframes zom{
+	50%{
+	transform: scale(1.1);
+
+	}
+}
+.cards .btn{
+	background: #4EF06E;
+	border: 1px solid #3CC257;
+	border-bottom: 4px solid #3CC257;
+	border-radius: 15px 15px;
+}
+.cards .btn:active{
+	border: none;
 }
