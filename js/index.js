@@ -1,3 +1,4 @@
+// carrosel de slide
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems, options);
@@ -9,15 +10,22 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.carousel').carousel({
     	fullWidth: true,
     	indicators: true,
+      onCycleTo: 5
     });
   });
+  // Slide automatico
+  window.setInterval(function(){
+      $('.carousel').carousel('prev');
+
+    },3000)   
+// opacidade do menu quando dar um scroll
   var menu = document.querySelector('.home')
 	window.addEventListener('scroll',function() {
-	if(document.body.scrollTop > 4 || document.documentElement.scrollTop > 4 ){
-		menu.style.opacity = '0.7'
-	}else{
-		menu.style.opacity = "10"
-	}
+    	if(document.body.scrollTop > 4 || document.documentElement.scrollTop > 4 ){
+    		menu.style.opacity = '0.7'
+    	}else{
+    		menu.style.opacity = "10"
+    	}
 });
   //código de inicialização select
   document.addEventListener('DOMContentLoaded', function() {
@@ -32,19 +40,23 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   //script da senha
   
-      var senha = $('#senha');
-      var olho = $(".botao");
 
+      let olho = $(".botao");
         olho.click(function() {
-          senha.attr("type", "text");
-          olho = "visibility_off"
-          olho.style.color = "red"
+            let senha = $('#senha');
+            let senhatype = senha.attr("type")
+            $(this).attr("class","material-icons").css({'cursor':'pointer'})
+
+            if(senhatype == "password"){
+                  senha.attr("type", "text")
+                  $(this).attr("class","material-icons").html("visibility");
+            }else if(senhatype == "text"){
+               senha.attr("type", "password")
+               $(this).attr("class","material-icons").html("visibility_off");
+            }
+          
         });
 
-        olho.click(function() {
-          senha.attr("type", "password");
-        });
 $(document).ready(function() {
     $('input#senha').characterCounter();
   });
-        

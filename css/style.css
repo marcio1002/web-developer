@@ -48,11 +48,12 @@ body{
 /* Carrosel de slide */
 .slide-carrosel{
 	width: 100%;
-	padding: 10px 0;
+	margin-top: -18px;
 }
 .carousel{
-	max-width: 85%;
-	margin: 0px auto;
+	max-width: 80%;
+	max-height:  80%;
+	margin: 0 auto;
 }
 /** rodapé */
 .page-footer{
@@ -147,15 +148,18 @@ body{
 	background-size: 90%;
 	background-position: -200% 40%;
 	padding-top: 30px;
-	margin-top: 10px;
+	margin-top: 20px;
+	margin-bottom: -20px;
 }
 .required{
 	color: red;
 }
-.material-icons{
-	cursor:  pointer;
+#form .caix-row{
+	max-height: 100%;
 }
-.form .row{
-	position: relative;
-	left: 20%;
+#for .botao{
+	cursor: pointer;
+}
+#for .material-icons:active{
+	color: red;
 }
