@@ -28,9 +28,7 @@ body{
 .home ul li:hover{
 	background-color: #558CC0;
 }
-.home ul li:hover ::{
 
-}
 .home ul li a{
 	color:  black;
 	margin-top: -8px;
@@ -106,8 +104,7 @@ body{
 .cards a{
 	font-size: 18px;
 }
-.cards ul{
-}
+
 .cards ul li{
 	display: flex;
 	padding-bottom: 30px;
@@ -162,4 +159,51 @@ body{
 }
 #for .material-icons:active{
 	color: red;
+}
+ .input-field input:focus {
+	border-bottom: 1px solid #719FCA;
+	 box-shadow: 0 1px 0 0 #000;
+}
+.box_input{
+	position: absolute;
+	background: rgba(0,0,0,.2);
+	width: 100%;
+	height: 100%;
+}
+.box_form {
+	margin: 5% auto;
+	background: #E0E5E3;
+	width: 60%;
+	height: 60%;
+	box-shadow: 0 1px 25px #717674;
+	border-radius: 18px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	-ms-border-radius: 18px;
+	-o-border-radius: 18px;
+}
+.box_input h1 {
+	text-align: center
+}
+
+button {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.centralizar {
+	height: 38px;
+	width: 170px;
+	border-radius: 3px;
+	border: 1px solid #ef5351;
+	margin: 100px 38%;
+	text-align: center;
+}
+
+.input-select {
+  position: relative;
+	bottom: -90px;
+	width: 80%;
+	left: 10%;
 }
