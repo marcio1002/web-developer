@@ -4,54 +4,93 @@ body{
 }
 .home{
 	background: #fff;
-	height: 80px;
+	height: 70px;
 	display:  block;
+
 }
+
 .home ul{
 	margin-top: 15px;
-	padding-right: 50px;
+	padding-right: 30px;
+	display: flex;
+	align-items: center;
 }
 .home .espaco{
 	padding-left: 30px;
 	font-family: comic Sans MS;
+	text-align: justify;
 }
 .home img{
 	width: 30px;
 }
 .home ul li{
 	padding: 0 5px;
-	margin-left: 8px;
+	margin-left: 5px;
 	border: 3px solid #4395E1;
 	border-radius:  40px 40px 40px 40px;
-	height:  50px;
+	height:  43px;
 }
 .home ul li:hover{
 	background-color: #558CC0;
 }
 
 .home ul li a{
-	color:  black;
-	margin-top: -8px;
+	color:black;
+	margin-top: -12px;
 	font-size:  18px;
 }
 .home ul li a:hover{
 	color:  #ffffff;
 }
-.home .butao-cdt{
+.home .butao-login{
 	background: #F9694E;
 }
-.home .butao-cdt:hover{
-	background: #F8765D;
+.home .butao-login i{
+	margin: 5% 0;
+}
+
+/*Manipulação do botão idioma*/
+.home #btnIdioma {
+	border: none;
+	margin-right: -20px;
+	width: 120px;
+}
+.home #btnIdioma a {
+	font-size: 18px;
+}
+.home #btnIdioma img{
+	margin-top: 28px;
+	margin-left: 4px;
+	width: 13px;
+}
+.home #btnIdioma .ulIdioma {
+	display: flex;
+	flex-direction: column;
+	width: 150px;
+}
+
+.home #btnIdioma .ulIdioma li {
+	border: none;
+}
+.home #btnIdioma .ulIdioma :nth-child(2) {
+	width: 160px;
+}
+.home #btnIdioma .hiddenIdioma{
+	display: none;
 }
 /* Carrosel de slide */
 .slide-carrosel{
-	width: 100%;
 	margin-top: -18px;
+	padding:0;
+	width: 100%;
+	position: relative;
+	display: block;
 }
 .carousel{
-	max-width: 80%;
-	max-height:  80%;
+	max-width: 100%;
+	max-height:  90%;
 	margin: 0 auto;
+	width: 100%;
 }
 /** rodapé */
 .page-footer{
@@ -136,16 +175,16 @@ body{
 	border-radius: 15px 15px;
 }
 .cards .btn:active{
-	border: none;
+	border-bottom: none;
 }
 /** formulário do cadastro */
-#for{
+#form{
 	padding-top: 20px;
 	background: url('../img/web.jpg');
 	background-size: 90%;
 	background-position: -200% 40%;
 	padding-top: 30px;
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-bottom: -20px;
 }
 .required{
@@ -154,10 +193,10 @@ body{
 #form .caix-row{
 	max-height: 100%;
 }
-#for .botao{
+#form .botao{
 	cursor: pointer;
 }
-#for .material-icons:active{
+#form .material-icons:active{
 	color: red;
 }
  .input-field input:focus {

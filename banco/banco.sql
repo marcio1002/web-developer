@@ -28,3 +28,4 @@ default collate utf8_general_ci;
  
  select * from alunos;
  select * from cursos;
+ 

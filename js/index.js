@@ -1,9 +1,15 @@
-// carrosel de slide
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems, options);
-});
+//btn idioma
+$(document).ready(function () {
+  let ulElement = $(".home #dropdown")
+  $(".home .viewIdioma").hover(function () {
+    ulElement.removeClass('hiddenIdioma')
+  })
+  ulElement.mouseleave(function () {
+    ulElement.addClass('hiddenIdioma')
+  })
+})
 
+// carrosel de slide
 window.setInterval(function () {
   $('.carousel').carousel('prev');
 
@@ -20,16 +26,23 @@ $(document).ready(function () {
 // opacidade do menu quando dar um scroll
 var menu = document.querySelector('.home')
 window.addEventListener('scroll', function () {
-  if (document.body.scrollTop > 4 || document.documentElement.scrollTop > 4) {
+  if (document.body.scrollTop > 4 || document.documentElement.scrollTop > 4 || menu.fo) {
     menu.style.opacity = '0.7'
   } else {
     menu.style.opacity = "10"
   }
+  $('.home').hover(function () {
+    menu.style.opacity = '10'
+  }, function () {
+    menu.style.opacity = '0.7'
+  })
 });
+
+
 //código de inicialização select
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('select');
-  var instances = M.FormSelect.init(elems, options);
+  var instances = M.FormSelect.init(elems);
 });
 
 $(document).ready(function () {
@@ -64,9 +77,9 @@ input.click(function caixaInput() {
   let btn = $('.btn-cursos button')
   let divElementInput = $('.input-field')
 
-    divElement.attr("class", "box_input")
-    formElement.attr("class", "box_form")
-    btn.attr("class", "centralizar waves-effect  red lighten-1")
+  divElement.attr("class", "box_input")
+  formElement.attr("class", "box_form")
+  btn.attr("class", "centralizar waves-effect  red lighten-1")
   divElementInput.attr("class", "input-select col s4")
 });
 

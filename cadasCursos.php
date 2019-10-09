@@ -1,3 +1,6 @@
+<?php 
+    require_once "menu.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,21 +16,9 @@
 </head>
 
 <body>
-    <div class="navbar-fixed">
-        <nav class="home">
-            <div class="nav">
-                <a href="index.html" class="espaco brand-logo red-text "><img src="svg/web2.svg" /> Web Developer</a>
-                <ul class="right  hide-on-med-and-down">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="cursos.php">Cursos</a></li>
-                    <li><a href="https://www.intelectua.com.br/blog/o-que-e-desenvolvimento-web" target="_blanck">Saiba
-                            mais</a></li>
-                    <li class="butao-cdt"><a href="cadastro.php">cadastre-se<i
-                                class="small material-icons right ">create</i></a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+  <?php
+        menu();
+    ?>
     <div class="row cursosbox">
         <h1>Cadastro do Curso</h1>
         <form action="cadastrarCursos.php" method="POST">
@@ -42,7 +33,6 @@
             </div>
         </form>
     </div>
-
     <!--jaquery-->
     <script src="js/jquery.js"></script>
     <!--javaScript materialize -->

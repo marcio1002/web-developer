@@ -9,6 +9,12 @@
     $senha = $_POST['senha'];
     $curso = $_POST['curso'];
 
+    if ($nomeUsuario == "" || $email == "" || $cpf == "" || $cidade == "" || $endereco == "" || $senha == "" || $curso == "") {
+        echo "<script>alert('🚫 valor nulo')</script>";
+        echo "<script>alert('',location = 'cadasCursos.php')</script>";
+        exit;
+    }
+
     $inseri = "INSERT INTO alunos(nome,email,cpf,cidade,endereco,senha,id_curso) VALUES ('$nomeUsuario','$email','$cpf','$cidade','$endereco','$senha','$curso');";
     $query = mysqli_query($conexaoMysql, $inseri);
 
