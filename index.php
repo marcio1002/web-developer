@@ -1,6 +1,9 @@
 <?php 
     require_once "menu.php";
     require_once "footer.php" ;   
+    require_once "tradutor.php";
+    $_SESSION['idioma'];
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -11,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <meta name="description" content="Os melhores cursos EAD de programação gratuito com certificado.">
     <meta name="author" content="Marcio alemão">
-    <title> Web Developer</title>
+    <title><?php echo $title;?></title>
     <link rel="shortcut icon" type="image/x-icon" href="svg/web.svg">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -26,8 +29,7 @@
         <div class="row">
             <div class=" col l4 s6">
                 <div class="caixa-text col s8">
-                    <p>Domine a web com os melhores cursos na <span>Web Developer</span>, um dos fatores de importância
-                        para as empresas. </p>
+                    <p><?php echo $p1; ?></p>
                 </div>
             </div>
             <div class="caixa-img col  s6">

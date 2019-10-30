@@ -87,3 +87,7 @@ input.click(function caixaInput() {
 $(document).ready(function () {
   M.updateTextFields();
 });
+
+$(document).ready(function () {
+  $('.materialboxed').materialbox();
+});

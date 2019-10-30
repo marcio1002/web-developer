@@ -38,13 +38,13 @@ form.addEventListener("animationend", event => {
 /* background squares */
 const ulSquares = document.querySelector("ul.squares");
 
-for (let i = 0; i < 11; i++) {
+for (let i = 0; i < 13; i++) {
   const li = document.createElement("li");
 
   const random = (min, max) => Math.random() * (max - min) + min;
 
   const size = Math.floor(random(10, 120));
-  const position = random(1, 99);
+  const position = random(1, 93);
   const delay = random(5, 0.1);
   const duration = random(24, 12);
 
@@ -53,6 +53,7 @@ for (let i = 0; i < 11; i++) {
   li.style.bottom = `-${size}px`;
 
   li.style.left = `${position}%`;
+  li.style.right = `${position}%`;
 
   li.style.animationDelay = `${delay}s`;
   li.style.animationDuration = `${duration}s`;
