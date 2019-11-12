@@ -1,11 +1,12 @@
 <?php
-    // index
+    // menu
     $title = " Web Developer";
     $menu = "cursos";
     $menuSM = "Saiba mais";
     $menuIdioma = "Idioma";
     $btnBr = "Português";
     $btnEn = "Inglês";
+    
     $p1 = "Domine a web com os melhores cursos na <span>Web Developer</span>, um dos fatores de importância para as empresas.";
     //cursos
     $cursosHC = "Curso de HTML e CSS";
@@ -44,8 +45,7 @@ Um trabalho que envolve ouvir, colher informações, fazer protótipos, testar, 
 O desenvolvimento de softwares é uma atividade complexa, que exige bastante conhecimento técnico.
 
 Daí o alto valor agregado da função.";    
-    
-// cadstro
+// cadastro
 $formName = "Nome completo: ";
 $formEmail = "E-mail: ";
 $formCpf = "Digite o CPF: ";
@@ -56,4 +56,9 @@ $formPassword = "Senha: ";
 $btnConfi = "Confirmo o registro";
 $btnterms = "Aceito os termos de serviços";
 $btnSubmit = "Cadastrar";
+//footer
+$contatos = "contatos";
+$sujestoes = "Dúvidas ou sujestões,quer da seu feedback entre contato com a gente.";
+$freepik = "Conheça o site Freepik";
+$redeSociais = "Siga-nos pelas redes sociais.";
 ?>

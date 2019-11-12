@@ -3,6 +3,7 @@
     require_once "menu.php";
     require_once "footer.php";
     require_once "tradutor.php";
+    $_SESSION['idioma'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -22,7 +23,7 @@
 
 <body>
     <?php
-        menu();
+       menu($menu, $menuSM, $menuIdioma,$btnBr, $btnEn);
     ?>
     <div id="form">
         <div class="row caix-row">
@@ -43,7 +44,7 @@
                     <div class="input-field col s4">
                         <input type="text" name="cpf" id="cpf" class="validate" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
                             maxlength="15" title="Dica: 123.456.789-22" placeholder="123.456.789-22" required />
-                        <label for="cpf" class="black-text"><span class="required">*</span><?php echo $idioma['formCpf'];?></label>
+                        <label for="cpf" class="black-text"><span class="required">*</span><?php echo $formCpf;?></label>
                     </div>
                     <div class=" input-field col s4">
                         <select name="curso" id="est">
@@ -57,20 +58,20 @@
 									 }
 							  ?>
                         </select>
-                        <label for="est" class="black-text"><span class="required">*</span><?php echo $idioma['formSelect'];?></label>
+                        <label for="est" class="black-text"><span class="required">*</span><?php echo $formSelect;?></label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s5">
                         <input type="text" name="cidade" id="cidade" placeholder="Cidade" class="validate" required />
-                        <label for="ende" class="black-text"><span class="required">*</span><?php echo $idioma['formCity'];?></label>
+                        <label for="ende" class="black-text"><span class="required">*</span><?php echo $formCity;?></label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s5">
                         <input type="text" name="endereco" id="ende" placeholder="Rua... n°" class="validate"
                             required />
-                        <label for="ende" class="black-text"><span class="required">*</span><?php echo $idioma['formEnd'];?></label>
+                        <label for="ende" class="black-text"><span class="required">*</span><?php echo $formEnd;?></label>
                     </div>
                 </div>
                 <div class="row">
@@ -79,30 +80,30 @@
                             title="No maximo 8 caracteres" maxlength="8"
                             title="Dica: A senha deve conter numeros, letras e cacteres" required />
                         <i class="material-icons botao">visibility_off</i>
-                        <label for="senha" class="black-text"><span class="required">*</span><?php echo $idioma['formPassword'];?></php></label>
+                        <label for="senha" class="black-text"><span class="required">*</span><?php echo $formPassword;?></php></label>
                     </div>
                 </div>
                 <div class="row">
                     <p>
                         <label>
                             <input type="checkbox" class="filled-in" checked="checked" />
-                            <span><?php echo $idioma['btnConfi'];?></span>
+                            <span><?php echo $btnConfi;?></span>
                         </label>
                     </p>
                     <p>
                         <label>
                             <input id="indeterminate-checkbox" type="checkbox" />
-                            <span><?php $idioma['btnTerms'];?></span>
+                            <span><?php $btnTerms;?></span>
                         </label>
                     </p>
                     <button class="btn center waves-effect  indigo lighten-1" type="submit"><i
-                            class="material-icons small right">person_add</i><?php echo $idioma['btnSubmit'];?></button>
+                            class="material-icons small right">person_add</i><?php echo $btnSubmit;?></button>
                 </div>
             </form>
         </div>
     </div>
     <?php
-        footer();
+        footer($sujestoes,$contatos,$freepik,$redeSociais);
     ?>
     <!--jaquery-->
     <script src="js/jquery.js"></script>

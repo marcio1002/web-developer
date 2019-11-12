@@ -23,7 +23,8 @@
 
 <body>
     <?php 
-        menu();
+    
+        menu($menu, $menuSM, $menuIdioma,$btnBr, $btnEn);
     ?>
     <div id="principal">
         <div class="row">
@@ -45,7 +46,7 @@
         </div>
     </div>
    <?php 
-    footer();
+    footer($sujestoes,$contatos,$freepik,$redeSociais);
    ?>
     <!--jaquery-->
     <script src="js/jquery.js"></script>

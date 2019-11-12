@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <?php menu();?>
+    <?php  menu($menu, $menuSM, $menuIdioma,$btnBr, $btnEn);?>
     <div class="saibaMais">
         <div class="row">
             <div class="col s6 m4 left-align">
@@ -28,7 +28,7 @@
             <p><?php echo $sbMaisP;?></p>
         </div>
     </div>
-    <?php footer();?>
+    <?php footer($sujestoes,$contatos,$freepik,$redeSociais);?>
     <script src="js/jquery.js"></script>
     <!--javaScript materialize -->
     <script src="js/materialize.min.js"></script>

@@ -1,7 +1,7 @@
 <?php
-    require_once "tradutor.php";
-    $_SESSION['idioma'];
-    function menu() {
+    
+
+    function menu($menu, $menuSM, $menuIdioma,$btnBr, $btnEn) {
         echo "<div class='navbar-fixed'>
         <nav class='home'>
             <div>
@@ -9,7 +9,7 @@
                 <ul class='right  hide-on-med-and-down ul' id='menu-mobile'>
                     <li class='liElement'><a href='index.php'>Home</a></li>
                     <li class='liElement'><a href='cursos.php'>$menu</a></li>
-                    <li class='liElement'><a href='saibaMais.php'>$menupSM</a></li>
+                    <li class='liElement'><a href='saibaMais.php'>$menuSM</a></li>
                     <li class='butao-login'><a href='login.php'>Login<i
                                 class='small material-icons left' >portrait</i></a></li>
                     <li id='btnIdioma'>

@@ -37,7 +37,7 @@ body{
 .home ul li a{
 	color:black;
 	margin-top: -12px;
-	font-size:  18px;
+	font-size:  1.1em;
 }
 .home ul li a:hover{
 	color:  #ffffff;
@@ -53,10 +53,10 @@ body{
 .home #btnIdioma {
 	border: none;
 	margin-right: -20px;
-	width: 120px;
+	width: 130px;
 }
 .home #btnIdioma a {
-	font-size: 18px;
+	font-size: 1em;
 }
 .home #btnIdioma img{
 	margin-top: 28px;
@@ -73,7 +73,7 @@ body{
 	border: none;
 }
 .home #btnIdioma .ulIdioma :nth-child(2) {
-	width: 160px;
+	width: 150px;
 }
 .home #btnIdioma .hiddenIdioma{
 	display: none;

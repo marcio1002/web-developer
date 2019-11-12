@@ -1,59 +1,65 @@
 <?php
-    // index
+    // menu
     $title = " Web Developer";
-    $menuCursos = "cursos";
-    $menuSM = "Saiba mais";
-    $menuIdioma = "Idioma";
-    $btnBr = "Português";
-    $btnEn = "Inglês";
-    $p1 = "Domine a web com os melhores cursos na <span>Web Developer</span>, um dos fatores de importância para as empresas.";
+    $menu = "courses";
+    $menuSM = "know more";
+    $menuIdioma = "Language";
+    $btnBr = "Portuguese";
+    $btnEn = "English";
+
+    $p1 = "Master the web with the best courses at <span> Web Developer </span>, one of the important factors for companies.";
     //cursos
-    $cursosHC = "Curso de HTML e CSS";
-    $CursosJS= "Curso JavaScript";
-    $CursosPHP = "Curso de PHP";
-    $cursosCPC = "Curso de python, c# e c++";
-    $cursosFrame  = "Curso completo de Frameworks web";
-    $cursosMB = "Curso Mobile completo";
-    $lblGratis = "Gratis";
-    $lblPago = "Comprar";
+    $cursosHC = "HTML and CSS Course";
+    $CursosJS= "JavaScript course";
+    $CursosPHP = "PHP course";
+    $cursosCPC = "Python, C # and C ++ Course";
+    $cursosFrame  = "Complete Course of Web Frameworks";
+    $cursosMB = "Complete Mobile Course";
+    $lblGratis = "Free";
+    $lblPago = "Purchase";
     // saibaMais
-    $sbMaisTitle = "Saiba Mais";
-    $sbMaisH1 = "O que é desenvolvimento de softwares?";
-    $sbMaisP = "     Desenvolvimento de softwares é a atividade de <strong>criar programas de computação</strong>, executada por um desenvolvedor ou grupo de desenvolvedores.
+    $sbMaisTitle = "Know more";
+    $sbMaisH1 = "What is software development?";
+    $sbMaisP = "    Software development is the activity of <strong> computer program creation </strong>, performed by a developer or group of developers.
 
-Parece uma definição um tanto óbvia, não é mesmo? Mas você sabe como isso é feito ou, antes disso, o que é um software?
+Sounds like a pretty obvious definition, doesn't it? But do you know how this is done or, before that, what is software?
 
-O software é um produto virtual, que consiste essencialmente em um conjunto de códigos – instruções escritas em determinada linguagem da computação.
+Software is a virtual product, consisting essentially of a set of codes - instructions written in a particular computer language.
 
-Quando o usuário vai utilizar um software, porém, ele não enxerga códigos.
+When the user goes to use software, however, he does not see codes.
 
-Isso porque essas instruções vão ser traduzidas pela tela do equipamento eletrônico e apresentadas de modo diferente ou até mesmo materializadas em ações em alguns tipos de aparelhos.
+This is because these instructions will be translated on the screen of electronic equipment and presented different actions or even materialized in some types of devices.
 
-Os desenvolvedores (ou “devs”, no jargão da categoria) são programadores, ou seja, eles escrevem o programa a partir dos já referidos códigos.
+Developers (or 'devs' in category jargon) are programmers, meaning they write the program from the code mentioned above.
 
-Mas nem todo programador é desenvolvedor.
+But not every programmer is a developer.
 
-Porque essa alcunha é atribuída aos profissionais que participam de todo o processo de desenvolvimento de softwares.
+Because this nickname is attributed to professionals who participate in the entire software development process.
 
-Não basta, portanto, apenas escrever códigos.
+It is not enough, therefore, just to write codes.
 
-O desenvolvedor precisa saber conduzir um projeto, desde a concepção, entendendo quais são as necessidades do cliente.
+The developer needs to know how to conduct a project from conception, understanding what the customer needs.
 
-Um trabalho que envolve ouvir, colher informações, fazer protótipos, testar, ajustar, homologar e implementar.
+A job that involves listening, gathering information, prototyping, testing, tuning, approving and implementing.
 
-O desenvolvimento de softwares é uma atividade complexa, que exige bastante conhecimento técnico.
+Software development is a complex activity that requires a lot of technical knowledge.
 
-Daí o alto valor agregado da função.";    
+Hence the high added value of the function.";    
     
-// cadstro
-$formName = "Nome completo: ";
+// cadastro
+$formName = "Full name:";
 $formEmail = "E-mail: ";
-$formCpf = "Digite o CPF: ";
-$formSelect =  "Escolha o curso: "; 
-$formCity = "Cidade: ";
-$formEnd = "Endereço: ";
-$formPassword = "Senha: ";
-$btnConfi = "Confirmo o registro";
-$btnterms = "Aceito os termos de serviços";
-$btnSubmit = "Cadastrar";
+$formCpf = "type the CPF: ";
+$formSelect =  "Choose the course: "; 
+$formCity = "City: ";
+$formEnd = "Address: ";
+$formPassword = "Password: ";
+$btnConfi = "I confirm the registration";
+$btnterms = "I accept the terms of service";
+$btnSubmit = "Register";
+//footer
+$contatos = "contacts";
+$sujestoes = "Questions or suggestions, either from your feedback contact us.";
+$freepik = "Get to know the Freepik website";
+$redeSociais = "Follow us on social networks.";
 ?>

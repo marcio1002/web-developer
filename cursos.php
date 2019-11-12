@@ -21,9 +21,7 @@
 </head>
 
 <body>
-    <?php
-        menu();
-    ?>
+    <?php menu($menu, $menuSM, $menuIdioma,$btnBr, $btnEn); ?>
     <div class="cards">
         <ul>
             <li>
@@ -101,7 +99,7 @@
         </ul>
     </div>
   <?php
-    footer();
+    footer($sujestoes,$contatos,$freepik,$redeSociais);
   ?>
     <!--jaquery-->
     <script src="js/jquery.js"></script>
