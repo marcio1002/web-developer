@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <meta name="description" content="Os melhores cursos EAD de programação gratuito com certificado.">
     <meta name="author" content="Marcio alemão">
-    <title><?php echo title;?></title>
+    <title><?php echo $title;?></title>
     <link rel="shortcut icon" type="image/x-icon" href="svg/web.svg">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
