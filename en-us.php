@@ -10,8 +10,8 @@
     $p1 = "Master the web with the best courses at <span> Web Developer </span>, one of the important factors for companies.";
     //cursos
     $cursosHC = "HTML and CSS Course";
-    $CursosJS= "JavaScript course";
-    $CursosPHP = "PHP course";
+    $cursosJS= "JavaScript course";
+    $cursosPHP = "PHP course";
     $cursosCPC = "Python, C # and C ++ Course";
     $cursosFrame  = "Complete Course of Web Frameworks";
     $cursosMB = "Complete Mobile Course";
