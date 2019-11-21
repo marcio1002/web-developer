@@ -3,9 +3,9 @@
     $title = " Web Developer";
     $menu = "courses";
     $menuSM = "know more";
-    $menuIdioma = "Language";
     $btnBr = "Portuguese";
     $btnEn = "English";
+    $iconIdioma = "svg/gra-bretanha.svg";
 
     $p1 = "Master the web with the best courses at <span> Web Developer </span>, one of the important factors for companies.";
     //cursos
@@ -62,4 +62,5 @@ $contatos = "contacts";
 $sujestoes = "Questions or suggestions, either from your feedback contact us.";
 $freepik = "Get to know the Freepik website";
 $redeSociais = "Follow us on social networks.";
+$etec = "Etec from Itaquaquecetuba";
 ?>

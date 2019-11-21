@@ -2,7 +2,6 @@
     require_once "menu.php";
     require_once "footer.php";
     require_once "tradutor.php";
-    $_SESSION['idioma']
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <?php  menu($menu, $menuSM, $menuIdioma,$btnBr, $btnEn);?>
+    <?php  menu($menu, $menuSM,$btnBr,$iconIdioma, $btnEn);?>
     <div class="saibaMais">
         <div class="row">
             <div class="col s6 m4 left-align">
@@ -28,7 +27,7 @@
             <p><?php echo $sbMaisP;?></p>
         </div>
     </div>
-    <?php footer($sujestoes,$contatos,$freepik,$redeSociais);?>
+    <?php footer($sujestoes,$contatos,$freepik,$redeSociais,$etec);?>
     <script src="js/jquery.js"></script>
     <!--javaScript materialize -->
     <script src="js/materialize.min.js"></script>

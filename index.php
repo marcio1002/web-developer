@@ -1,9 +1,8 @@
 <?php 
+    
     require_once "menu.php";
     require_once "footer.php" ;   
     require_once "tradutor.php";
-    $_SESSION['idioma'];
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -24,7 +23,7 @@
 <body>
     <?php 
     
-        menu($menu, $menuSM, $menuIdioma,$btnBr, $btnEn);
+        menu($menu, $menuSM,$btnBr,$iconIdioma, $btnEn);
     ?>
     <div id="principal">
         <div class="row">
@@ -46,7 +45,7 @@
         </div>
     </div>
    <?php 
-    footer($sujestoes,$contatos,$freepik,$redeSociais);
+    footer($sujestoes,$contatos,$freepik,$redeSociais,$etec);
    ?>
     <!--jaquery-->
     <script src="js/jquery.js"></script>

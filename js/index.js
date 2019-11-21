@@ -1,12 +1,26 @@
 //btn idioma
 $(document).ready(function () {
-  let ulElement = $(".home #dropdown")
+    let ulElement = $(".home #dropdown")
   $(".home .viewIdioma").hover(function () {
     ulElement.removeClass('hiddenIdioma')
   })
   ulElement.mouseleave(function () {
     ulElement.addClass('hiddenIdioma')
   })
+
+  M.updateTextFields();
+//código de inicialização select
+  $('select').formSelect();
+// carrosel de slide
+  $('.carousel').carousel({
+    fullWidth: true,
+    indicators: true,
+    onCycleTo: 5
+  });
+
+  $('input#senha').characterCounter();
+
+  $('.materialboxed').materialbox();
 })
 
 // carrosel de slide
@@ -15,13 +29,6 @@ window.setInterval(function () {
 
 }, 3000)
 
-$(document).ready(function () {
-  $('.carousel').carousel({
-    fullWidth: true,
-    indicators: true,
-    onCycleTo: 5
-  });
-});
 
 // opacidade do menu quando dar um scroll
 var menu = document.querySelector('.home')
@@ -38,15 +45,8 @@ window.addEventListener('scroll', function () {
   })
 });
 
-
-//código de inicialização select
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('select');
-  var instances = M.FormSelect.init(elems);
-});
-
 $(document).ready(function () {
-  $('select').formSelect();
+  
 });
 
 //script da senha
@@ -63,11 +63,8 @@ olho.click(function () {
     senha.attr("type", "password")
     $(this).attr("class", "material-icons").html("visibility_off");
   }
+});
 
-});
-$(document).ready(function () {
-  $('input#senha').characterCounter();
-});
 // funcao de click no cadastro de cursos
 const input = $('.input-field .input')
 
@@ -81,13 +78,4 @@ input.click(function caixaInput() {
   formElement.attr("class", "box_form")
   btn.attr("class", "centralizar waves-effect  red lighten-1")
   divElementInput.attr("class", "input-select col s4")
-});
-
-//script de label do input
-$(document).ready(function () {
-  M.updateTextFields();
-});
-
-$(document).ready(function () {
-  $('.materialboxed').materialbox();
 });

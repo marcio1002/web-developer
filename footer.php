@@ -1,7 +1,6 @@
 <?php
     require_once "tradutor.php";
-    $_SESSION['idioma'];
-    function footer($sujestoes,$contatos,$freepik,$redeSociais) {
+    function footer($sujestoes,$contatos,$freepik,$redeSociais,$etec) {
         echo " <footer class='page-footer'>
         <div class='container'>
             <div class='row'>
@@ -32,7 +31,7 @@
         <div class='footer-copyright'>
             <div class='container'>
                 ©2019 Web Developer
-                <a class='grey-text text-lighten-4 right' href='#!'>Etec de itaquaquecetuba</a>
+                <a class='grey-text text-lighten-4 right' href='#!'>$etec</a>
             </div>
         </div>
     </footer>";

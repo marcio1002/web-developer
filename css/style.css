@@ -26,12 +26,13 @@ body{
 .home ul li{
 	padding: 0 5px;
 	margin-left: 5px;
-	border: 3px solid #4395E1;
+	border: 3px solid #2D77BC;
 	border-radius:  40px 40px 40px 40px;
 	height:  43px;
+	font-size: 1rem;
 }
 .home ul li:hover{
-	background-color: #558CC0;
+	background-color: #4688C7;
 }
 
 .home ul li a{
@@ -41,9 +42,26 @@ body{
 }
 .home ul li a:hover{
 	color:  #ffffff;
+	
 }
+/*comentário necessário. coloquei essa estilização para tirar uma cor  de fundo transparente que é patrão do elemento nav do  materialize  */
+nav ul a{
+	transition: none;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+}
+
+nav ul a:hover {
+    background-color: rgba(0,0,0,0);
+}
+/* ---- */
+
 .home .butao-login{
 	background: #F9694E;
+	border: none;
+	
 }
 .home .butao-login i{
 	margin: 5% 0;
@@ -53,27 +71,42 @@ body{
 .home #btnIdioma {
 	border: none;
 	margin-right: -20px;
-	width: 130px;
+	width: 100px;
 }
 .home #btnIdioma a {
 	font-size: 1em;
 }
-.home #btnIdioma img{
-	margin-top: 28px;
+.home #btnIdioma img{	
 	margin-left: 4px;
-	width: 13px;
+	width: 18%;
+	
+}
+.home #btnIdioma img:nth-child(1) {
+	margin-right: 8%;
+}
+.home #btnIdioma .iconIdioma {
+	width: 40%;
+	display: inline-block;
+	vertical-align: middle;
 }
 .home #btnIdioma .ulIdioma {
-	display: flex;
-	flex-direction: column;
-	width: 150px;
+	width: 180px;
+	margin: 5% -30%;
 }
 
 .home #btnIdioma .ulIdioma li {
 	border: none;
+	width: 100%;
+	margin: 1% -20%;
+	font-size: 1em;
+	
 }
-.home #btnIdioma .ulIdioma :nth-child(2) {
-	width: 150px;
+.home #btnIdioma .ulIdioma li:nth-child(2) {
+	width: 110%;
+}
+.home #btnIdioma .ulIdioma img {
+	display: inline-block;
+	vertical-align: middle;
 }
 .home #btnIdioma .hiddenIdioma{
 	display: none;
@@ -178,14 +211,16 @@ body{
 	border-bottom: none;
 }
 /** formulário do cadastro */
-#form{
+#box-form{
 	padding-top: 20px;
-	background: url('../img/web.jpg');
-	background-size: 90%;
-	background-position: -200% 40%;
+	background: url('../img/background-gradient.svg');
+	background-size:cover;
 	padding-top: 30px;
 	margin-top: 10px;
 	margin-bottom: -20px;
+}
+#box-form .form {
+	margin-left: 8%;
 }
 .required{
 	color: red;
