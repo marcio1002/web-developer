@@ -1,0 +1,25 @@
+{
+    "name": "marcio/web-developer",
+    "description": "site simples",
+    "type": "project",
+    "license": "Aladdin",
+    "autoload":{
+        "psr-4": {
+            "WebDeveloper\\": "src/"
+        },
+        "files": [
+            "src/config.php",
+            "src/language.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "marcio1002",
+            "email": "marcioalemao1999@yahoo.com"
+        }
+    ],
+    "require": {
+        "coffeecode/router": "^1.0",
+        "league/plates": "^3.3"
+    }
+}
