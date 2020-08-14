@@ -16,3 +16,19 @@ function renderUrl(?string $url = null): string
   $baseUrl = BASE_URL;
   return empty($url) ? $baseUrl : "$baseUrl$url";    
 }
+
+
+define("BD_CONFIG",[
+  "DRIVER" => "mysql",
+  "HOST" => "localhost",
+  "PORT" => "3306",
+  "USERNAME" => "root",
+  "PASSWD" => "",
+  "DBNAME" => "web_developer",
+  "OPTIONS" => [
+    PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_CASE => PDO::CASE_NATURAL,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+  ]
+]);

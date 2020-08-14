@@ -11,8 +11,8 @@ class Tradutor {
     
     public function traduzir($params) {
         try {
-            session_name(hash("crc32",uniqid("ABLS{$_SERVER['REMOTE_ADDR']}ABLS{$_SERVER['HTTP_USER_AGENT']}")));
-            session_id(hash("whirlpool", uniqid("ABLS{$_SERVER['REMOTE_ADDR']}ABLS{$_SERVER['HTTP_USER_AGENT']}")));
+            $name = hash("crc32","ABLS{$_SERVER['REMOTE_ADDR']}ABLS{$_SERVER['HTTP_USER_AGENT']}");
+            session_name($name);
 
             if (
                 session_status() == PHP_SESSION_DISABLED || 
@@ -20,11 +20,13 @@ class Tradutor {
                 ) 
                 session_start();
 
-            if(in_array($params["language"],static::$language) && !isset($_COOKIE["lang"])) {
+            if(in_array($params["language"],static::$language)) {
                 setcookie("lang",null,0,"/");
+
                 $expire = time() + ((12 * 30 * 24 * 3600));
 
                 setcookie('lang', $params["language"], $expire, '/', "", false, true);
+
                 echo json_encode(["error" => false,"code" => 201]);
             } else {
                 echo json_encode(["error" => false,"code" => 304]);
@@ -33,7 +35,9 @@ class Tradutor {
         }catch(Exception $ex) {
             header("{$_SERVER["SERVER_PROTOCOL"]} {$ex->getCode()}  server error");
         }finally {
-            if (session_status() == PHP_SESSION_ACTIVE) session_destroy();
+            if (session_status() == PHP_SESSION_ACTIVE) {
+                session_destroy(); session_commit();
+            }
         }
     }
 }

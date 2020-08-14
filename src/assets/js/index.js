@@ -13,10 +13,7 @@ $(function () {
   window.setInterval(() => $('.carousel').carousel('prev'), 3000)
   $('.carousel').carousel({ fullWidth: true, indicators: true, onCycleTo: 5 })
   $('select').formSelect()
-  $('input#senha').characterCounter();
-  M.updateTextFields();
-  $('.materialboxed').materialbox();
-  M.FormSelect.init($('select*'));
+  $('.materialboxed').materialbox()
 
 
   /* btn idioma */
@@ -40,31 +37,6 @@ $(function () {
     })
   })
 
-  //script da senha
-
-  $(".botao").click(function () {
-    $(this).prop("class", "material-icons").css('cursor', 'pointer')
-
-    if ($('#senha').prop("type") == "password") {
-      $('#senha').prop("type", "text")
-      $(this).prop("class", "material-icons").html("visibility");
-    } else {
-      $('#senha').prop("type", "password")
-      $(this).prop("class", "material-icons").html("visibility_off");
-    }
-
-  });
-
-  // função de click no cadastro de cursos
-
-  $('.input-field .input').click(function () {
-    $('.cursosbox').addClass("box_input")
-    $('.cursosbox form').addClass("box_form")
-    $('.btn-cursos button').addClass("centralizar waves-effect  red lighten-1")
-    $('.input-field').addClass("input-select col s4")
-  })
-
-
   $("#formLanguage").on("click", "#btnLanguagePtRB, #btnLanguageEnUS", function (evt) {
     evt.preventDefault()
     
@@ -78,7 +50,7 @@ $(function () {
       data,
       beforeSend: () => $("#btnConversor").prop("disabled", true),
       complete: () => $("#btnConversor").prop("disabled", false),
-      success: (res) => console.log(res),
+      success: (res) => {if(!res.error) location.reload()},
       error: (err) => console.warn(err.responseText)
   
     }

@@ -2,54 +2,44 @@
 
 <div id="form">
     <div class="row caix-row">
-        <form class="form col s5 right" enctype="multipart/form-data">
+        <form  id="formCadastro" class="form col s5 right" enctype="multipart/form-data">
             <div class="row">
                 <div class="input-field col s4">
-                    <input type="text" id="name" name="nome" maxlength="40" />
+                    <input type="text" id="name" name="nome" class="validate" maxlength="40" data-required=""/>
                     <label for="name" class="black-text"><?= $lang["formName"]; ?></label>
                 </div>
                 <div class="input-field col s4">
-                    <input type="email" name="email" id="e-mail" class="validate" placeholder="usuario@enderoço.com" autocomplete required />
+                    <input type="email" name="email" id="email" class="validate" placeholder="usuario@enderoço.com" autocomplete data-required=""/>
                     <label for="e-mail" data-error="E-mail Inválido" class="black-text"><span class="required">*</span><?= $lang["formEmail"]; ?></label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s4">
-                    <input type="text" name="cpf" id="cpf" class="validate" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="15" title="Dica: 123.456.789-22" placeholder="123.456.789-22" required />
+                    <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="123.456.789-22" data-required=""/>
                     <label for="cpf" class="black-text"><span class="required">*</span><?= $lang['formCpf']; ?></label>
                 </div>
                 <div class=" input-field col s4">
-                    <select name="curso" id="est">
+                    <select name="id_curso" id="id_curso" data-required="">
                         <option disable selected></option>
-                        <?php
-                        $select = "SELECT * FROM cursos ORDER BY nomeCursos ASC";
-                        if(isset($conexaoMysql)) {
-                            $dadosCursos = mysqli_query($conexaoMysql, $select);
-
-                            while ($dadosCursosArray = mysqli_fetch_array($dadosCursos)) {
-                                echo "<option value='$dadosCursosArray[id_curso]'>$dadosCursosArray[nomeCursos]</option>";
-                            }
-                        }
-                        ?>
                     </select>
-                    <label for="est" class="black-text"><span class="required">*</span><?= $lang['formSelect']; ?></label>
+                    <label for="curso" class="black-text"><span class="required">*</span><?= $lang['formSelect']; ?></label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s5">
-                    <input type="text" name="cidade" id="cidade" placeholder="Cidade" class="validate" required />
+                    <input type="text" name="cidade" id="cidade" placeholder="Cidade" class="validate" data-required=""/>
                     <label for="ende" class="black-text"><span class="required">*</span><?= $lang['formCity']; ?></label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s5">
-                    <input type="text" name="endereco" id="ende" placeholder="Rua... n°" class="validate" required />
-                    <label for="ende" class="black-text"><span class="required">*</span><?= $lang['formAddress']; ?></label>
+                    <input type="text" name="endereco" id="address" placeholder="Rua... n°" class="validate" data-required=""/>
+                    <label for="address" class="black-text"><span class="required">*</span><?= $lang['formAddress']; ?></label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s5">
-                    <input type="password" id="senha" class="validate" name="senha" data-lenght="8" title="No maximo 8 caracteres" maxlength="8" title="Dica: A senha deve conter numeros, letras e cacteres" required />
+                    <input type="password" id="passwd" class="validate" name="senha" maxlength="8" title="No máximo 8 caracteres" maxlength="8" title="Dica: A senha deve conter números, letras e caracteres" data-required=""/>
                     <i class="material-icons botao">visibility_off</i>
                     <label for="senha" class="black-text"><span class="required">*</span><?= $lang['formPasswd']; ?></php></label>
                 </div>
@@ -57,18 +47,23 @@
             <div class="row">
                 <p>
                     <label>
-                        <input type="checkbox" class="filled-in" checked="checked" />
+                        <input type="checkbox" id="confirm" class="filled-in" checked="checked" />
                         <span><?= $lang['btnConfirm']; ?></span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="indeterminate-checkbox" type="checkbox" />
+                        <input id="terms" type="checkbox" />
                         <span><?= $lang['btnTerms']; ?></span>
                     </label>
                 </p>
-                <button class="btn center waves-effect  indigo lighten-1" type="submit"><i class="material-icons small right">person_add</i><?= $lang['btnSubmit']; ?></button>
+                <button class="btn center waves-effect  indigo lighten-1"><i class="material-icons small right">person_add</i><?= $lang['btnSubmit']; ?></button>
             </div>
         </form>
     </div>
 </div>
+
+<?php $this->start("scripts");?>
+
+<script src="./src/assets/js/cadastro.js"></script>
+<?php $this->stop();?>

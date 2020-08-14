@@ -13,7 +13,7 @@ use WebDeveloper\Controllers\Componente;
   <meta http-equiv="X-UA-Compatible" content="ie-edge">
   <meta name="description" content="Os melhores cursos EAD de programação gratuito com certificado.">
   <meta name="author" content="Marcio alemão">
-  <link rel="shortcut icon" type="image/x-icon" href="svg/web.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="./src/assets/svg/web.svg">
   <link rel="stylesheet" href="./src/assets/css/materialize.min.css">
   <link rel="stylesheet" href="./src/assets/css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -28,7 +28,11 @@ use WebDeveloper\Controllers\Componente;
   else :
     echo Componente::menu($lang);
     echo $this->section("content");
-    echo Componente::footer($lang);
+    if($this->section("cadastro-curso")):
+      echo $this->section("cadastro-curso");
+    else:
+      echo Componente::footer($lang);
+    endif;
   endif;
   ?>
   <!--jquery-->
