@@ -2,10 +2,8 @@
 
 namespace WebDeveloper\Controllers;
 
-use WebDeveloper\Models\Data;
 use Exception;
-use WebDeveloper\Models\Alunos;
-use WebDeveloper\Models\Cursos;
+use WebDeveloper\Models\{Cursos,Alunos,Data};
 
 class Main  {
 

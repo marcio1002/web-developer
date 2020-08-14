@@ -15,7 +15,7 @@ use WebDeveloper\Controllers\Componente;
   <meta name="author" content="Marcio alemão">
   <link rel="shortcut icon" type="image/x-icon" href="./src/assets/svg/web.svg">
   <link rel="stylesheet" href="./src/assets/css/materialize.min.css">
-  <link rel="stylesheet" href="./src/assets/css/style.css">
+  <link rel="stylesheet" href="./src/assets/css/style.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <?= $this->section("css"); ?>
   <title><?= $title; ?></title>

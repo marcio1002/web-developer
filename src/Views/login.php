@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/x-icon" href="./src/assets/svg/web.svg">
     <link rel="stylesheet" href="./src/assets/css/style.css">
-    <link rel="stylesheet" href="./src/assets/css/login.css" />
+    <link rel="stylesheet" href="./src/assets/css/login.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Developer login</title>
   </head>
