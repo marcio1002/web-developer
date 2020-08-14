@@ -5,7 +5,7 @@ use WebDeveloper\Controllers\Componente;
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -41,7 +41,7 @@ use WebDeveloper\Controllers\Componente;
   <script src="./src/assets/js/materialize.min.js"></script>
   <!--JavaScript -->
   <script src="./src/assets/js/index.js"></script>
-  <script> const BASE_URL = "https://127.0.0.1/www/web-developer/"; </script>
+  <?= "<script> const BASE_URL = \"".BASE_URL."\"; </script>"?>
   <?= $this->section("scripts"); ?>
 </body>
 
