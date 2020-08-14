@@ -6,6 +6,6 @@ Um site voltado para cursos de programação. Foi desenvolvimento para fins acad
 
 > _Local:_ **php composer.phar install** 
 
-> **composer install --dry-run** **php composer.phar iinstall** ou  simular a instalação e testa o website
+> **composer install --dry-run** ou **php composer.phar install --dry-run**  Para simular a instalação e testa o website
 
 <img src="./src/assets/img/website-exemplo.png" style="width: 35%; margin: 0 auto;"/>
