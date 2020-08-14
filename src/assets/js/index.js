@@ -11,7 +11,7 @@ $(function () {
 
 
   window.setInterval(() => $('.carousel').carousel('prev'), 3000)
-  $('.carousel').carousel({ fullWidth: true, indicators: true, onCycleTo: 5 })
+  $('.carousel').carousel({ fullWidth: true, indicators: true })
   $('select').formSelect()
   $('.materialboxed').materialbox()
 

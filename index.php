@@ -40,7 +40,7 @@ $router->get("/error/{httpError}",function($params) {
 
 $router->namespace("WebDeveloper\Controllers");
 $router->group("system");
-$router->post("/traduzir","Tradutor:traduzir");
+$router->post("/traduzir","Translator:translate");
 $router->post("/createcurses","Main:createCurses");
 $router->post("/searchcurses","Main:searchCurses");
 $router->post("/createaccountstudants","Main:createAccountStudents");

@@ -14,8 +14,8 @@
 </div>
 <div class="slide-carrosel">
     <div class="carousel carousel-slider">
-        <a class="carousel-item" id="um" href="#one!"><img src="./src/assets/img/web-designer.jpg"></a>
-        <a class="carousel-item" id="dois" href="#two!"><img src="./src/assets/img/lenguage.jpg"></a>
-        <a class="carousel-item" id="tres" href="#three!"><img src="./src/assets/img/web-dev.jpg"></a>
+        <a class="carousel-item" id="um" href="#one!"><img src="./src/assets/img/web-designer.jpg" class="responsive-img"></a>
+        <a class="carousel-item" id="dois" href="#two!"><img src="./src/assets/img/lenguage.jpg" class="responsive-img"></a>
+        <a class="carousel-item" id="tres" href="#three!"><img src="./src/assets/img/web-dev.jpg" class="responsive-img"></a>
     </div>
 </div>

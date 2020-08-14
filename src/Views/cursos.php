@@ -44,7 +44,7 @@
                         <?= $lang["cursosCPC"];?></span>
                 </div>
                 <div class="card-content">
-                    <span class="card-title  red-text">$100,00 </span>
+                    <span class="card-title  red-text">$45,00 </span>
                     <a href=<?= renderUrl("/cadastro");?> class="btn btn-large waves-effect waves-light"><i class="material-icons small">shopping_cart</i>
                         <?= $lang["labelPago"]; ?></a>
                 </div>
@@ -56,7 +56,7 @@
                     <span class="card-title activator grey-text text-darken-4"><?= $lang["cursosFrame"]; ?></span>
                 </div>
                 <div class="card-content">
-                    <span class="card-title  red-text">$50,00 </span>
+                    <span class="card-title  red-text">$25,00 </span>
                     <a href=<?= renderUrl("/cadastro");?> class="btn btn-large waves-effect waves-light"><i class="material-icons small">shopping_cart</i>
                         <?= $lang["labelPago"]; ?>
                     </a>
@@ -69,7 +69,7 @@
                     <span class="card-title activator white-text"><?= $lang["cursosMobile"]; ?></span>
                 </div>
                 <div class="card-content">
-                    <span class="card-title  red-text">$50,00 </span>
+                    <span class="card-title  red-text">$25,00 </span>
                     <a href=<?= renderUrl("/cadastro");?> class="btn btn-large waves-effect waves-light"><i class="material-icons small">shopping_cart</i>
                         <?= $lang["labelPago"]; ?>
                     </a>

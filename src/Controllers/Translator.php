@@ -4,12 +4,12 @@ namespace WebDeveloper\Controllers;
 
 use Exception;
 
-class Tradutor {
+class Translator {
 
     private static $language = array("pt-BR", "en-US");
 
     
-    public function traduzir($params) {
+    public function translate($params) {
         try {
             $name = hash("crc32","ABLS{$_SERVER['REMOTE_ADDR']}ABLS{$_SERVER['HTTP_USER_AGENT']}");
             session_name($name);
