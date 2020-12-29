@@ -27,16 +27,14 @@ function getLanguage(): array
 }
 
 $router->group(null);
-$router->get("/",function() { echo directory()->render("index",["lang" => getLanguage()]); });
-$router->get("/cursos",function() {echo directory()->render("cursos",["lang" => getLanguage()]);});
-$router->get("/saiba-mais",function() {echo directory()->render("saibaMais",["lang" => getLanguage()]);});
-$router->get("/login",function() {echo directory()->render("login",["lang" => getLanguage()]);});
-$router->get("/cadastro",function() {echo directory()->render("cadastro",["lang" => getLanguage()]);});
-$router->get("/cadastro-de-cursos",function() {echo directory()->render("cadasCursos",["lang" => getLanguage()]);});
+$router->get("/",fn() => print_r(directory()->render("index",["lang" => getLanguage()])));
+$router->get("/cursos",fn() => print_r(directory()->render("cursos",["lang" => getLanguage()])));
+$router->get("/saiba-mais", fn() => print_r(directory()->render("saibaMais",["lang" => getLanguage()])));
+$router->get("/login",fn() => print_r(directory()->render("login",["lang" => getLanguage()])));
+$router->get("/cadastro",fn() => print_r(directory()->render("cadastro",["lang" => getLanguage()])));
+$router->get("/cadastro-de-cursos",fn() => print_r(directory()->render("cadasCursos",["lang" => getLanguage()])));
 
-$router->get("/error/{httpError}",function($params) {
-  echo directory()->render("httpError",["errorCode" => $params["httpError"]]);
-});
+$router->get("/error/{httpError}", fn($params) => directory()->render("httpError",["errorCode" => $params["httpError"]]));
 
 $router->namespace("WebDeveloper\Controllers");
 $router->group("system");
