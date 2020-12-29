@@ -34,7 +34,7 @@ $router->get("/login",fn() => print_r(directory()->render("login",["lang" => get
 $router->get("/cadastro",fn() => print_r(directory()->render("cadastro",["lang" => getLanguage()])));
 $router->get("/cadastro-de-cursos",fn() => print_r(directory()->render("cadasCursos",["lang" => getLanguage()])));
 
-$router->get("/error/{httpError}", fn($params) => directory()->render("httpError",["errorCode" => $params["httpError"]]));
+$router->get("/error/{httpError}", fn($params) => print_r(directory()->render("httpError",["errorCode" => $params["httpError"]])));
 
 $router->namespace("WebDeveloper\Controllers");
 $router->group("system");
